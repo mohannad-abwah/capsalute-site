@@ -3,7 +3,7 @@ export const SITE = {
 	title: "Code Stitch Web Designs",
 	tagline: "Professional Web Design Services",
 	description: "Code Stitch Web Designs offers top-tier web design and development services to meet all your project needs. Start exploring and contact our team for superior quality and reliability.",
-	url: "https://www.yourwebsite.com",
+	url: "https://capsalute.ca",
 	author: "Code Stitch Team",
 	locale: "en",
 };
