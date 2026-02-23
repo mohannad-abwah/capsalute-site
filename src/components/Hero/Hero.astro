@@ -19,19 +19,27 @@ const { image } = Astro.props as Props;
 <section id="hero">
 	<div class="cs-container">
 		<div class="cs-flex-group">
-			<span class="cs-topper">WORK IN PROGRESS</span>
-			<h1 class="cs-title">Capsalute Inc.<br/>Own your Space's Tech</h1>
-			<p class="cs-text">We design & install lighting, networking, cameras, and various automations. Our solutions are managed entirely locally in your space. We avoid the cloud and proprietary systems providing a seamless, integrated experience.</p>
-			<!--<a href="/about/" class="cs-button-solid">Explore More</a>-->
-			<!--<a href="/contact/" class="cs-button-transparent">-->
-			<!--	<Icon name="play" class="cs-img" />-->
-			<!--	Get in Touch-->
-			<!--</a>-->
+			<span class="cs-topper">Modern living without compromises</span>
+			<h1 class="cs-title">Capsalute Inc.</h1>
+			<p class="cs-topper">Local-First Smart Spaces</p>
+			<p class="cs-text">We design privacy-focused smart homes with a reliable local foundation. No forced subscriptions. No fragile cloud dependence. No juggling apps.<br/> Lighting, networking, cameras, and automation that <i>just works</i>.</p>
+			<a href="/about/" class="cs-button-solid">Explore More</a>
+			<a href="/contact/" class="cs-button-transparent">
+				<Icon name="play" class="cs-img" />
+				Get in Touch
+			</a>
 		</div>
 	</div>
 
 	<!-- Using the preloaded image from the props -->
-	<Picture src={image.src} alt="new home" width={image.attributes.width} height={image.attributes.height} formats={["avif", "webp"]} priority pictureAttributes={{ class: "cs-picture" }} />
+    <Picture
+            src={image.src}
+            alt="hero image"
+            width={image.attributes.width}
+            height={image.attributes.height}
+            formats={["avif", "webp"]}
+            priority
+            pictureAttributes={{class: "cs-picture"}} />
 </section>
 
 <style lang="less">
