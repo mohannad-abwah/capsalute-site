@@ -1,7 +1,7 @@
 ---
 // Utils
-import { Icon } from "astro-icon/components";
 import { getCurrentYear } from "@js/utils";
+import logoWhite from "../../assets/logos/logo-white.svg";
 
 // Data
 import { BUSINESS } from "@data/client";
@@ -13,10 +13,10 @@ const currentYear = getCurrentYear();
 <footer id="footer">
 	<div class="container">
 		<div class="left-section">
-			<a class="logo" href="/" aria-label="Return to [Company Name] Home page">
-				<Icon name="logo-white" width="264" height="78" />
+			<a class="logo" href="/" aria-label="Return to Capsalute Home page">
+				<img src={logoWhite.src} width="264" height="78" alt="Capsalute Inc. Logo" />
 			</a>
-			<p>Extra content if you need it, if not you can delete this whole p tag. I usually do.</p>
+			<p>Smart spaces that are local, subscription-free, and under your control. Contact us now.</p>
 		</div>
 		<div class="right-section">
 			<div class="lists">
@@ -36,33 +36,10 @@ const currentYear = getCurrentYear();
 					<li>
 						<h2>Services</h2>
 					</li>
-					<li>Service1</li>
-					<li>Service2</li>
-					<li>Service4</li>
-					<li>Service5</li>
-				</ul>
-				<ul>
-					<li>
-						<h2>Contact</h2>
-					</li>
-					<li>
-						<a href="/contact/">
-							{BUSINESS.address.lineOne}<br />
-							{BUSINESS.address.lineTwo}<br />
-							{BUSINESS.address.city}
-							{BUSINESS.address.state}
-							{BUSINESS.address.zip}
-						</a>
-					</li>
-					<li>
-						<a href={`tel:${BUSINESS.phoneForTel}`}>
-							T:
-							{BUSINESS.phoneFormatted}
-						</a>
-					</li>
-					<li>
-						<a href={`mailto:${BUSINESS.email}`}>Click to Email</a>
-					</li>
+					<li>Smart Lighting</li>
+					<li>Networking</li>
+					<li>Automation</li>
+					<li>Security Cameras</li>
 				</ul>
 			</div>
 		</div>
@@ -70,8 +47,8 @@ const currentYear = getCurrentYear();
 
 	<div class="credit">
 		<span>Designed and Hand Coded by</span>
-		<a href="/" target="_blank" rel="noopener">Your Company Name</a>
-		<span class="copyright"> Copyright {currentYear} - Present</span>
+		<a href="/" target="_blank" rel="noopener">Capsalute Inc.</a>
+		<span class="copyright"> Copyright 2026 - Present</span>
 	</div>
 </footer>
 

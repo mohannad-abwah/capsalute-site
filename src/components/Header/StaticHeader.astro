@@ -13,6 +13,7 @@
 
 // Utils
 import { Icon } from "astro-icon/components";
+import logoBlack from "../../assets/logos/logo-black.svg";
 
 // Components
 import DarkModeToggle from "@components/DarkModeToggle/DarkModeToggle.astro";
@@ -22,7 +23,7 @@ import DarkModeToggle from "@components/DarkModeToggle/DarkModeToggle.astro";
 	<div class="cs-container">
 		<!--Nav Logo-->
 		<a href="/" class="cs-logo" aria-label="Return to [Company Name] Home page">
-			<Icon name="logo-black" />
+			<img src={logoBlack.src} alt="Capsalute Inc. Logo" />
 		</a>
 		<!--Navigation List-->
 		<nav class="cs-nav" aria-label="main navigation">
