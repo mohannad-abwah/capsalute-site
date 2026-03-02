@@ -8,17 +8,16 @@ import Hero from "@components/Hero/Hero.astro";
 import Services from "@components/Services/Services.astro";
 import SideBySide from "@components/SideBySide/SideBySide.astro";
 import SideBySideReverse from "@components/SideBySideReverse/SideBySideReverse.astro";
-import Gallery from "@components/Gallery/Gallery.astro";
-import Testimonials from "@components/Testimonials/Testimonials.astro";
 import FAQ from "@components/FAQ/FAQ.astro";
 import CTASimple from "@components/CTA/CTASimple.astro";
+import { SITE } from "@data/client";
 
 // Optimize our landing image and pass it as props to the BaseLayout (for preloading) and Banner (for rendering)
 import heroImage from "@assets/images/hero/hero.jpg";
 const optimizedHeroImage = await getImage({ src: heroImage, format: "webp" });
 ---
 
-<BaseLayout title="Capsalute" description="Local & private smart spaces" heroImage={optimizedHeroImage}>
+<BaseLayout title={SITE.name} description={SITE.title} heroImage={optimizedHeroImage}>
 	<Hero image={optimizedHeroImage} />
 	<Services />
 	<SideBySide />

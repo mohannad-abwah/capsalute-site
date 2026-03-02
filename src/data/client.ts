@@ -1,8 +1,9 @@
 // ===== SITE CONSTANTS =====
 export const SITE = {
+	name: "Capsalute",
 	title: "Private smart spaces",
-	tagline: "Professional Web Design Services",
-	description: "Code Stitch Web Designs offers top-tier web design and development services to meet all your project needs. Start exploring and contact our team for superior quality and reliability.",
+	tagline: "Eliminating the need to pick between privacy and smart comfort",
+	description: "We build privacy-first, local smart home systems designed around reliability, security, and long-term ownership. Because your home should outlast trends, platforms, and product cycles.",
 	url: "https://capsalute.ca",
 	author: "Capsalute Inc.",
 	locale: "en",
