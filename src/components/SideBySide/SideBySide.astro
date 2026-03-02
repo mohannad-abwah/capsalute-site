@@ -7,16 +7,28 @@ import { Picture } from "astro:assets";
 import { SITE } from "@data/client";
 
 // Images
-import cabinets2 from "@assets/images/services/cabinets2.jpg";
-import construction from "@assets/images/services/construction.jpg";
+import cabinets from "@assets/images/services/cabinets-m.jpg";
+import foyer from "@assets/images/projects/port5.jpg";
 ---
 
 <section id="sbs">
 	<div class="cs-container">
 		<!-- Left Image Section -->
 		<div class="cs-left">
-			<Picture src={cabinets2} alt="cabinets" width={522} formats={["avif", "webp"]} pictureAttributes={{ class: "cs-picture cs-picture1" }} priority />
-			<Picture src={construction} alt="house" width={390} formats={["avif", "webp"]} pictureAttributes={{ class: "cs-picture cs-picture2" }} priority />
+			<Picture
+			  src={foyer}
+              alt="foyer"
+              width={522}
+              formats={["avif", "webp"]}
+              pictureAttributes={{ class: "cs-picture cs-picture1" }}
+              priority />
+			<Picture
+              src={cabinets}
+              alt="cabinets"
+              width={390}
+              formats={["avif", "webp"]}
+              pictureAttributes={{ class: "cs-picture cs-picture2" }}
+              priority />
 		</div>
 		<!-- Right Content Section-->
 		<div class="cs-right">
