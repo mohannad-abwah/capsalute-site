@@ -12,17 +12,12 @@ export const SITE = {
 // ===== BUSINESS INFO =====
 export const BUSINESS = {
 	name: SITE.title,
-	email: "help@codestitch.app",
-	phoneForTel: "555-779-4407",
-	phoneFormatted: "(555) 779-4407",
 	logo: "/assets/favicons/favicon.svg",
 	address: {
-		lineOne: "First Address Line",
-		lineTwo: "Second Address Line",
-		city: "Denver",
-		state: "CO",
-		zip: "80206",
-		mapLink: "https://goo.gl/maps/UAQn4vuGDiwv7DV39",
+		city: "Burnaby",
+		state: "BC",
+		zip: "V5G",
+		mapLink: "https://maps.app.goo.gl/s1GoQgvAr4qsq6fv8",
 	},
 	socials: {
 		facebook: "https://www.facebook.com/",

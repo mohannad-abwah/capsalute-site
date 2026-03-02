@@ -20,12 +20,26 @@ const optimizedImage = await getImage({ src: landingImage, format: "webp" });
 
 	<section id="cs-contact">
 		<div class="cs-container">
-			<form id="cs-form" name="Contact Form" method="post">
+			<form id="cs-form" action="https://api.web3forms.com/submit" name="Contact Form" method="post">
 				<div class="cs-content">
 					<span class="cs-topper">Contact</span>
 					<h2 class="cs-title">Get in Touch</h2>
-					<p class="cs-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ridiculus elementum ullamcorper ipsum porttitor aliquam. Id magna urna ultrices odio pulvinar. Sed ut.</p>
+					<p class="cs-item-text">If you’re building or upgrading in search of:</p>
+					<ul>
+						<li>Secure smart home installation</li>
+						<li>Wired lighting control (DALI systems)</li>
+						<li>Local-first home automation</li>
+						<li>Enterprise-grade home networking</li>
+						<li>Future-proof smart home infrastructure</li>
+					</ul>
+					<br/>
+					<p class="cs-item-text">Please include the services you're interested in, as well as your location.</p>
+					<br/>
 				</div>
+				<input type="hidden" name="access_key" value="9b4754b8-b343-41b4-bb85-1388abb1b16a">
+				<input type="hidden" name="subject" value="Contact Us Form Submission">
+				<input type="hidden" name="from_name" value="Capsalute Site">
+				<input type="checkbox" name="botcheck" id="" style="display: none;">
 				<label>
 					Name
 					<input required type="text" id="name" name="name" placeholder="Name" />
@@ -46,22 +60,24 @@ const optimizedImage = await getImage({ src: landingImage, format: "webp" });
 					Message
 					<textarea required name="Message" id="message" placeholder="Write message..."></textarea>
 				</label>
-				<!--<button class="cs-button-solid" type="submit">Submit Message</button>-->
+				<button class="cs-button-solid" type="submit">Submit</button>
 			</form>
 			<div class="cs-right-section">
-				<!--Email-->
-				<span class="cs-header">Email</span>
-				<a class="cs-link" href={`mailto:${BUSINESS.email}`}>{BUSINESS.email}</a>
-				<!--Phone-->
-				<span class="cs-header">Phone</span>
-				<a class="cs-link" href={`tel:${BUSINESS.phoneForTel}`}>{BUSINESS.phoneFormatted}</a>
+				<span class="cs-header">You’re in the right place.</span>
+				<br/>
+				<span class="cs-header">A smart foundation built to last decades, not product cycles.</span>
+				<br/>
+				<br/>
+				<span class="cs-header">Our Services:</span>
+				<span class="cs-header">- Smart Lighting</span>
+				<span class="cs-header">- Networking</span>
+				<span class="cs-header">- Security Cameras</span>
+				<span class="cs-header">- Automation</span>
+				<br/>
+				<br/>
 				<!--Address-->
-				<span class="cs-header">Address</span>
+				<span class="cs-header">Located at:</span>
 				<a class="cs-link" href={BUSINESS.address.mapLink}>
-					{BUSINESS.address.lineOne},
-					<br />
-					{BUSINESS.address.lineTwo},
-					<br />
 					<span class="cs-block">
 						{BUSINESS.address.city}
 						{BUSINESS.address.state}

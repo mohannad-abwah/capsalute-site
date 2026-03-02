@@ -12,11 +12,8 @@ export function getLocalBusinessSchema(origin) {
 		"url": SITE.url,
 		"logo": origin + BUSINESS.logo,
 		"image": origin + BUSINESS.logo,
-		"email": BUSINESS.email,
-		"telephone": BUSINESS.phoneForTel,
 		"address": {
 			"@type": "PostalAddress",
-			"streetAddress": `${BUSINESS.address.lineOne}, ${BUSINESS.address.lineTwo}`,
 			"addressLocality": BUSINESS.address.city,
 			"addressRegion": BUSINESS.address.state,
 			"postalCode": BUSINESS.address.zip,
