@@ -41,9 +41,6 @@ import DarkModeToggle from "@components/DarkModeToggle/DarkModeToggle.astro";
 					<li class="cs-li">
 						<a href="/" class:list={["cs-li-link", { "cs-active": Astro.url.pathname === "/" }]} aria-current={Astro.url.pathname === "/" ? "page" : undefined}> Home </a>
 					</li>
-					<li class="cs-li">
-						<a href="/about/" class:list={["cs-li-link", { "cs-active": Astro.url.pathname === "/about/" }]} aria-current={Astro.url.pathname === "/about/" ? "page" : undefined}> About Us </a>
-					</li>
 					<!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
 					<!-- Note: When copying this dropdown, update the id attribute with an appropriate name (e.g., "services-dropdown-toggle", "products-dropdown-toggle") and ensure the aria-labelledby attribute on the ul matches the button's id -->
 					<li class="cs-li cs-dropdown">
