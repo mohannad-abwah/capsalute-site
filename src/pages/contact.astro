@@ -11,7 +11,6 @@ import { BUSINESS } from "@data/client";
 
 // Images
 import landingImage from "@assets/images/landing.jpg"; // <-- THE PATH TO THE ASSET YOU WANT TO PRELOAD - The asset must live in src
-import skyscraperImage from "@assets/images/gallery/skyscraper.jpg";
 const optimizedImage = await getImage({ src: landingImage, format: "webp" });
 ---
 
@@ -23,16 +22,7 @@ const optimizedImage = await getImage({ src: landingImage, format: "webp" });
 			<form id="cs-form" action="https://api.web3forms.com/submit" name="Contact Form" method="post">
 				<div class="cs-content">
 					<span class="cs-topper">Contact</span>
-					<h2 class="cs-title">Get in Touch</h2>
-					<p class="cs-item-text">If you’re building or upgrading in search of:</p>
-					<ul>
-						<li>Secure smart home installation</li>
-						<li>Wired lighting control (DALI systems)</li>
-						<li>Local-first home automation</li>
-						<li>Enterprise-grade home networking</li>
-						<li>Future-proof smart home infrastructure</li>
-					</ul>
-					<br/>
+					<h2 class="cs-title">You're in the right place.</h2>
 					<p class="cs-item-text">Please include the services you're interested in, as well as your location.</p>
 					<br/>
 				</div>
@@ -53,7 +43,7 @@ const optimizedImage = await getImage({ src: landingImage, format: "webp" });
 					<input required type="text" id="phone" name="phone" placeholder="Phone" />
 				</label>
 				<label>
-					How Did You Find Us
+					How Did You Find Us?
 					<input type="text" id="find" name="find-us" placeholder="How did you find us?" />
 				</label>
 				<label class="cs-label-message">
@@ -62,32 +52,6 @@ const optimizedImage = await getImage({ src: landingImage, format: "webp" });
 				</label>
 				<button class="cs-button-solid" type="submit">Submit</button>
 			</form>
-			<div class="cs-right-section">
-				<span class="cs-header">You’re in the right place.</span>
-				<br/>
-				<span class="cs-header">A smart foundation built to last decades, not product cycles.</span>
-				<br/>
-				<br/>
-				<span class="cs-header">Our Services:</span>
-				<span class="cs-header">- Smart Lighting</span>
-				<span class="cs-header">- Networking</span>
-				<span class="cs-header">- Security Cameras</span>
-				<span class="cs-header">- Automation</span>
-				<br/>
-				<br/>
-				<!--Address-->
-				<span class="cs-header">Located at:</span>
-				<a class="cs-link" href={BUSINESS.address.mapLink}>
-					<span class="cs-block">
-						{BUSINESS.address.city}
-						{BUSINESS.address.state}
-						{BUSINESS.address.zip}
-					</span>
-				</a>
-
-				<!-- Background Image-->
-				<Picture src={skyscraperImage} alt="building" width={2500} height={1667} formats={["avif", "webp"]} pictureAttributes={{ class: "cs-bg-picture" }} />
-			</div>
 		</div>
 	</section>
 </BaseLayout>
@@ -313,8 +277,8 @@ const optimizedImage = await getImage({ src: landingImage, format: "webp" });
 			.cs-container {
 				max-width: (1280/16rem);
 				display: flex;
-				justify-content: flex-end;
-				align-items: flex-start;
+				justify-content: center;
+				align-items: center;
 				gap: (80/16rem);
 			}
 
