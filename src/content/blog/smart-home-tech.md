@@ -1,7 +1,7 @@
 ---
 title: Consumer Smart Home Tech
 description: Privacy, Reliability, and Real-World Reality
-author: Jasminder
+author: Jas
 date: 2026-03-01T00:00:00.000-08:00
 image: "@assets/images/blog/2550979025_9a57c016fb_z.jpg"
 imageAlt: A bunch of cameras
